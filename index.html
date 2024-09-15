@@ -14,11 +14,13 @@
 </head>
 
 <body>
+    <div onclick=closewindow() id="darkbackground"></div>
     <div id="starry-background"></div> 
 <!--     <div id="starry-background2"></div>  -->
 <!--     <img id="backhill" src="slike/backhill.png" alt=""> -->
 <!--     <img id="fronthill" src="slike/gradient to right.svg" alt=""> -->
     <div id="center">
+        <iframe id='videoframe' width="1366" height="768" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div id="firstsection">
             <h1>Adrian Tarnai</h1>
             <h2>Graphics / Motion Designer</h2>
@@ -73,7 +75,7 @@
                     <h1 id="web" onclick="navigationchange('web')">Web design</h1>
             </div>
             <div id="motiongraphics" class="show">
-                <div class="video-wrapper">
+                <div onclick="changeIframeSource('www.youtube.com/embed/EOrx9KtBS1w?si=wKOzLOW7-beThu9V')" class="video-wrapper">
                     <video data-label="Lil' Devil Teemo" class="hover-video" muted loop>
                         <source src="slike/Teemosquare.webm" type="video/mp4">
                     </video>
@@ -82,7 +84,7 @@
 
                     </div>
                 </div>
-                <div class="video-wrapper">
+                <div onclick="changeIframeSource('www.youtube.com/embed/1N9qdktF6zw?si=tC87YQ2iIRPze0ys')" class="video-wrapper" data-label="https://www.youtube.com/embed/1N9qdktF6zw?si=Q8Z9JBaRfRnqaS2Q">
                     <video data-label="Twitch The Plague Rat" class="hover-video" muted loop>
                         <source src="slike/twitchsquare.webm" type="video/mp4">
                     </video>
@@ -92,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="video-wrapper">
+                <div onclick="changeIframeSource('www.youtube.com/embed/_Uk7AQjlgJI?si=gnxiI3xobMvttS1G')" class="video-wrapper" data-label="https://www.youtube.com/embed/_Uk7AQjlgJI?si=PHFrybsj_wL35hjy">
                     <video data-label="Winter Blessed Shaco" class="hover-video" muted loop>
                         <source src="slike/winterbleseedsquare.webm" type="video/mp4">
                     </video>
@@ -102,7 +104,7 @@
                     </div>
                 </div>
 
-                <div class="video-wrapper">
+                <div onclick="changeIframeSource('www.youtube.com/embed/pUbd31dfTbI?si=K-CcqsohJBjHsniz')" class="video-wrapper" data-label="https://www.youtube.com/embed/pUbd31dfTbI?si=RVqszquGIJSzcVk9">
                     <video data-label="Vayne Login Screen" class="hover-video" muted loop>
                         <source src="slike/vayneweb.webm" type="video/mp4">
                     </video>
@@ -179,9 +181,9 @@
         
 
 
-        const starryBackground = document.getElementById('starry-background');
+      /*   const starryBackground = document.getElementById('starry-background'); */
 /*         const starryBackground2 = document.getElementById('starry-background2'); */
-        const numStars = 15;
+     /*    const numStars = 15;
         const stars = [];
 
         function createStar() {
@@ -200,8 +202,8 @@
             
             stars.push(star);
             return star;
-        }
-
+        } */
+/* 
         function moveStars() {
             stars.forEach(star => {
                 let x = parseFloat(star.style.left);
@@ -222,16 +224,16 @@
             
             requestAnimationFrame(moveStars);
         }
-
-        for (let i = 0; i < numStars; i++) {
-            starryBackground.appendChild(createStar());
+ */
+       /*  for (let i = 0; i < numStars; i++) { */
+      /*       starryBackground.appendChild(createStar()); */
 /*             starryBackground2.appendChild(createStar()); */
-        }
+    /*     } */
 
-        moveStars(); // Start the animation
+      /*   moveStars();  */// Start the animation
 
 
-        document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    document.querySelectorAll('.video-wrapper').forEach(wrapper => {
     const video = wrapper.querySelector('.hover-video');
     const overlay = wrapper.querySelector('.video-overlay');
     const labelText = wrapper.querySelector('.label-text');
@@ -343,8 +345,24 @@ const slider = document.querySelector('.slider');
         setInterval(moveSlider, 8000); // Change slide every 3 seconds
 
 
-    
+        function changeIframeSource(ytsrc) {
+            
+            var iframe = document.getElementById('videoframe');
+            var darkbackground= document.getElementById('darkbackground')
+            iframe.style.display='block';
+            darkbackground.style.display='block';
+            iframe.src = "https://"+ytsrc;
+            document.body.style.overflow = 'hidden';
+           
+    }
 
+    function closewindow() {
+    var iframe = document.getElementById('videoframe');
+    iframe.style.display = 'none';
+    iframe.src = ''; // Clear the iframe source to stop the video
+    document.getElementById('darkbackground').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
 
     </script>
 </body>

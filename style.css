@@ -28,6 +28,28 @@ body
 
 }
 
+#darkbackground
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.559);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    z-index: 21;
+    transition: 0.1s;
+    display: none;
+}
+
+
+iframe
+{
+    z-index: 22;
+    width: 80%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 80px;
+    display: none;
+}
 
 
 .video-overlay {
