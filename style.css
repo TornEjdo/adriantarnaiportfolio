@@ -303,7 +303,7 @@ font-weight: 200;
 
 #whoami p
 {
-    width: 50vw;
+    width: 40vw;
     font-size: 16px;
 }
 
@@ -320,7 +320,7 @@ font-weight: 200;
     position: relative;
     margin: 0 auto;
     padding: 20px 0; /* Add vertical padding */
-    font-size: 20px;
+    font-size: 16px;
 }
 .slider {
     display: flex;
