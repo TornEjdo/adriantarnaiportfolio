@@ -451,4 +451,15 @@ font-weight: 200;
     #navigation h1 {
         font-size: 16px;
     }
+
+    #firstsection h1 
+    {
+        font-size: 74px;
+    }
+
+    #firstsection h2 
+    {
+        font-size: 24px;
+    }
+    
   }
