@@ -461,5 +461,10 @@ font-weight: 200;
     {
         font-size: 24px;
     }
+
+    #motiongraphics 
+    {
+        width: 95vw
+    }
     
   }
