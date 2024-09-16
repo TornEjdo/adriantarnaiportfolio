@@ -16,7 +16,7 @@
 <body>
     <div onclick=closewindow() id="darkbackground"></div>
     <div id="starry-background"></div> 
-<!--     <div id="starry-background2"></div>  -->
+     <div id="starry-background2"></div>
 <!--     <img id="backhill" src="slike/backhill.png" alt=""> -->
 <!--     <img id="fronthill" src="slike/gradient to right.svg" alt=""> -->
 
@@ -39,7 +39,7 @@
                         <div class="hover-text">YouTube</div>
                     </div>
                 </div>
-<!--                 <a href="https://www.fiverr.com/s/yvjbPXe"><img src="https://img.icons8.com/?size=100&id=a2bDUitpXGnO&format=png&color=FFFFFF" alt="" ></a>
+<!--            <a href="https://www.fiverr.com/s/yvjbPXe"><img src="https://img.icons8.com/?size=100&id=a2bDUitpXGnO&format=png&color=FFFFFF" alt="" ></a>
                 <a href="https://www.instagram.com/adomograph/"><img src="https://img.icons8.com/?size=100&id=32292&format=png&color=FFFFFF" alt=""></a>
                 <a href="https://www.youtube.com/@adocoolninja69/videos"><img src="https://img.icons8.com/?size=100&id=37325&format=png&color=FFFFFF" alt=""></a> -->
             </div>
@@ -182,8 +182,8 @@
         
 
 
-      /*   const starryBackground = document.getElementById('starry-background'); */
-       const starryBackground2 = document.getElementById('starry-background2'); 
+        const starryBackground = document.getElementById('starry-background'); 
+         const starryBackground2 = document.getElementById('starry-background2'); 
         const numStars = 15;
         const stars = [];
 
@@ -225,13 +225,13 @@
             
             requestAnimationFrame(moveStars);
         }
-
-       for (let i = 0; i < numStars; i++) { 
+ 
+         for (let i = 0; i < numStars; i++) {
            starryBackground.appendChild(createStar()); 
-             starryBackground2.appendChild(createStar()); 
-      } 
+            starryBackground2.appendChild(createStar()); 
+       } 
 
-       moveStars(); 
+        moveStars(); 
 
 
     document.querySelectorAll('.video-wrapper').forEach(wrapper => {
