@@ -242,7 +242,7 @@ video:hover
 #center
 {
     display: flex;
-    width: 1000px;
+    width: 100%;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
@@ -437,7 +437,7 @@ font-weight: 200;
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     body {
       font-size: 16px;
     }
