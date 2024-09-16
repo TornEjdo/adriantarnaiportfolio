@@ -183,8 +183,8 @@
 
 
       /*   const starryBackground = document.getElementById('starry-background'); */
-/*         const starryBackground2 = document.getElementById('starry-background2'); */
-     /*    const numStars = 15;
+       const starryBackground2 = document.getElementById('starry-background2'); 
+        const numStars = 15;
         const stars = [];
 
         function createStar() {
@@ -203,8 +203,8 @@
             
             stars.push(star);
             return star;
-        } */
-/* 
+        } 
+
         function moveStars() {
             stars.forEach(star => {
                 let x = parseFloat(star.style.left);
@@ -225,13 +225,13 @@
             
             requestAnimationFrame(moveStars);
         }
- */
-       /*  for (let i = 0; i < numStars; i++) { */
-      /*       starryBackground.appendChild(createStar()); */
-/*             starryBackground2.appendChild(createStar()); */
-    /*     } */
 
-      /*   moveStars();  */// Start the animation
+       for (let i = 0; i < numStars; i++) { 
+           starryBackground.appendChild(createStar()); 
+             starryBackground2.appendChild(createStar()); 
+      } 
+
+       moveStars(); 
 
 
     document.querySelectorAll('.video-wrapper').forEach(wrapper => {
