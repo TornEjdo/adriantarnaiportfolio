@@ -82,11 +82,12 @@ iframe
 
 #navigation h1
 {
-    margin-right: 60px;
     background-color: black;
     transition: 0.3s;
-    padding: 15px;
+    padding: 20px;
+    margin: 20px;
     border-radius: 35px;
+    text-align: center;
 }
 
 #navigation h1:hover
@@ -437,7 +438,7 @@ font-weight: 200;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     body {
       font-size: 16px;
     }
@@ -446,5 +447,8 @@ font-weight: 200;
     {
         display: none;
 
+    }
+    #navigation h1 {
+        font-size: 16px;
     }
   }
