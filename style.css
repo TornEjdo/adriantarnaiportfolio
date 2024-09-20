@@ -289,7 +289,6 @@ video:hover
 
 #signatureado
 {
-    margin: 0 auto;
     justify-content: center;
     align-items: center;
     /* position: absolute; */
@@ -306,6 +305,19 @@ video:hover
     width: auto;
     margin: 0 auto;
     height: 50%;
+}
+
+#socialsmobile
+{
+    display: flex;
+    margin-left: 20px;
+}
+
+#socialsmobile img
+{
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
 }
 
 
@@ -485,6 +497,7 @@ font-weight: 200;
     #uppernavbar
     {
         display: flex;
+        justify-content: center;
     } 
     body {
       font-size: 16px;
