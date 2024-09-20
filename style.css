@@ -272,33 +272,40 @@ video:hover
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 200px;
     background-color: black;
     z-index: 23;
     display: none;
+    align-items: center;
 }
 
-#uppernavbar img
+#signatureado
+
 {
-    height: 100px;
-
+    height: 80%;
 }
+
+
 
 #signatureado
 {
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 45%;
+    /* position: absolute; */
+    /* left: 40%; */
+
 }
 
 #hamburger
 {
-    height: 50px !important;
-    margin: 20px;
-    position: absolute;
-    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: auto;
+    margin: 0 auto;
+    height: 50%;
 }
 
 
