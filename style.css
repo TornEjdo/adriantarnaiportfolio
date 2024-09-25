@@ -297,17 +297,7 @@ video:hover
 }
 
 /* Initial state before animation */
-.fade-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.9s ease-out, transform 0.75s ease-out;
-  }
-  
-  /* Class to be added when element enters the viewport */
-  .fade-up.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+
 
 #hamburger
 {
