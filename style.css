@@ -155,11 +155,18 @@ iframe
 
 
 
+#threedmodelling img
+
+{
+    margin: 50px;
+}
+
 #threedmodelling
 {
     display: none;
     align-items: center;
     justify-content: center;
+    width: 70%;
 }
 
 #webdesign
